@@ -1,0 +1,156 @@
+.hidden {
+    visibility: hidden;
+    position: relative;
+    top: 0;
+    left: -18px;
+    transition: none;
+    z-index: 1;
+}
+
+.first span:hover .hidden {
+    visibility: visible;
+    /* transition: 0; */
+}
+
+dd a {
+    transition: none;
+}
+
+.classify {
+    background-color: #e6e6e6;
+    height: 235px;
+    width: 216px;
+    box-sizing: border-box;
+    padding: 5px 0px;
+    margin-right: 20px;
+    float: left;
+}
+
+.classify .title {
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+.classify .optional {
+    float: left;
+    width: 48px;
+    height: 20px;
+    font-size: 14px;
+    margin-right: 4px;
+    margin-bottom: 7px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #e6e6e6;
+}
+
+.classify a {
+    color: rgb(133, 206, 252);
+}
+
+.main-box {
+    float: left;
+    width: 750px;
+    background-color: #fcf3f3;
+}
+
+.left-aside {
+    float: left;
+    width: 232px;
+    height: 86px;
+    margin: 7px;
+    padding-left: 2px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 0;
+}
+
+.left-aside section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 195px;
+    height: 100%;
+    opacity: 0.3;
+    background: #eeeeee url(imgs/a.webp) top left;
+    padding: 20px;
+    background-size: cover;
+    background-position-x: center;
+    margin-bottom: 10px;
+    z-index: -1;
+}
+
+.left-aside h3 {
+    color: #0099ff;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/*新闻导语*/
+
+.news {
+    border-radius: 5px;
+    box-shadow: 5px 5px rgb(123, 122, 122);
+}
+
+.news p {
+    line-height: 1.8em;
+    /*行高： 1.8em*/
+}
+
+.news a {
+    text-decoration: none;
+    color: #a78560;
+}
+
+.pic {
+    float: left;
+    width: 230px;
+    height: 144px;
+    position: absolute;
+    top: 250px;
+    left: -10px;
+    background-image: url("imgs/02.jpg");
+    background-size: cover;
+    transition: .5s;
+    border-radius: 10px;
+    filter: blur(3px);
+}
+
+.pic:hover {
+    background-image: url("imgs/01.jpg");
+    filter: blur(0);
+}
+
+.moving {
+    float: left;
+    margin-left: 25px;
+    background-image: url("imgs/pic.webp");
+    width: 80px;
+    height: 86px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 1px solid pink;
+    animation: move 15s infinite;
+    z-index: 1;
+}
+
+.moving:hover {
+    animation-play-state: paused;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, 450px);
+    }
+}

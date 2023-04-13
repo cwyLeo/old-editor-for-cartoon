@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #262626;
+    outline: 0;
+}
+
+.box-center {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.bookshelf {
+    /* background-color: skyblue; */
+    margin-top: 22px;
+    width: 120px;
+    height: 40px;
+    overflow: hidden;
+    float: right;
+}
+
+.bookshelf a {
+    /* box-sizing: border-box; */
+    position: relative;
+    display: block;
+    width: 118px;
+    height: 38px;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    line-height: 38px;
+    transition: .3s;
+}
+
+.bookshelf a:hover {
+    /* line-height: 40px; */
+    /* width: 118px; */
+    /* height: 38px; */
+    background-color: rgb(60, 189, 240);
+    border: 1px solid rgb(60, 189, 240);
+    color: white;
+}
+
+.logo {
+    float: left;
+    margin: 17px 92px 0 0;
+    width: 218px;
+    height: 55px;
+}
+
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(imgs/logo.png) no-repeat;
+    background-size: 217px;
+}
+
+.search {
+    float: left;
+    margin-top: 22px;
+}
+
+.search-box {
+    width: 326px;
+    height: 38px;
+    padding: 0 11px;
+    font-size: 14px;
+    line-height: 38px;
+    border: 1px solid #e6e6e6;
+    border-right: none;
+    outline: 0;
+}
+
+.search-box:focus-visible {
+    outline-offset: 0;
+}
+
+.search-btn {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(11, 175, 240);
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.search-btn:hover {
+    background-color: rgb(98, 202, 243);
+    /* color: ; */
+    font-weight: 700;
+}
+
+.search p {
+    float: left;
+}
+
+.nav {
+    height: 40px;
+    /* background-color: #3e3d43; */
+    background-color: rgb(11, 175, 240);
+    margin-bottom: 10px;
+}
+
+li {
+    list-style: none outside none;
+}
+
+.nav li {
+    float: left;
+}
+
+.first {
+    position: relative;
+    width: 216px;
+    height: 40px;
+    margin-right: 30px;
+    cursor: pointer;
+    background-color: rgb(56, 185, 243);
+}
+
+.first span {
+    font: 16px/40px PingFangSC-Regular, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif;
+    display: block;
+    padding: 0 0 0 18px;
+    transition: all .5s;
+    color: #fff;
+}
+
+.first span:hover {
+    background: rgb(34, 131, 221);
+}
+
+.first em {
+    float: left;
+    width: 16px;
+    height: 14px;
+    margin: 13px 8px 0 0;
+    vertical-align: middle;
+}
+
+.first em i {
+    display: block;
+    width: 16px;
+    height: 2px;
+    margin-bottom: 4px;
+    background: #d5d5d6;
+}
+
+.main-nav a {
+    font: 16px/40px PingFangSC-Regular, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif;
+    padding: 0 20px;
+    height: 40px;
+    color: #fff;
+    /* border-bottom: 2px solid #333; */
+}
+
+.main-nav {
+    /* border-top: 2px solid rgb(11, 175, 240); */
+    border: none;
+    transition: .3s;
+}
+
+.main-nav:hover {
+    background-color: rgb(60, 189, 240);
+    /* border-top: 2px solid rgb(209, 233, 71); */
+}
+
+.nav ul .return {
+    float: right;
+    transition: .3s;
+}
+
+.return a {
+    line-height: 40px;
+    color: #fff;
+    height: 40px;
+    padding: 0 20px;
+}
+
+.return:hover {
+    background: rgb(34, 131, 221);
+}
+
+.focus {
+    height: 410px;
+    position: relative;
+}
+
+.classify-list {
+    float: left;
+    position: relative;
+    border: 1px solid #e6e6e6;
+    top: -11px;
+    border-top: none;
+    width: 214px;
+    height: 420px;
+}
+
+.classify-list dd {
+    float: left;
+    width: 50%;
+    height: 60px;
+    background: #f7f6f2;
+    overflow: hidden;
+}
+
+dd.even {
+    background: #fcfcfa;
+}
+
+dd a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: rgb(167, 225, 248);
+    transition: .5s;
+}
+
+dd a:hover {
+    color: rgb(80, 190, 233);
+    font-weight: 600;
+}
+
+.focusbox {
+    float: left;
+    width: 538px;
+    /* padding-left: 10px; */
+}
+
+.focusslider {
+    width: 90%;
+    height: 270px;
+    border: 3px double pink;
+    /* box-sizing: content-box; */
+    border-radius: 5px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+
+/* .focusslider img {
+    /* display: block; 
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+} */
+
+.notice {
+    float: right;
+    padding-left: 5px;
+    position: relative;
+    width: 214px;
+    height: 248px;
+    border: 1px solid #e6e6e6;
+    background: #fcfcfa;
+    text-align: center;
+}
+
+.notice h3,
+.rank h3 {
+    font: 700 16px/1 PingFangSC-Regular, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif;
+    margin: 0 auto 8px;
+    padding-top: 12px;
+    height: 16px;
+    width: 160px;
+}
+
+.rank h3 {
+    margin-bottom: 4px;
+}
+
+.noticelist {
+    padding-left: 5px;
+}
+
+.noticelist li {
+    font: 14px/25px PingFangSC-Regular, '-apple-system', Simsun;
+    height: 25px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.rank li {
+    font: 14px/25px PingFangSC-Regular, '-apple-system', Simsun;
+    height: 25px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.reading {
+    display: flex;
+    align-items: center;
+    position: relative;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    background: #fcfcfa;
+    height: 123px;
+    width: 538px;
+    margin-top: 15px;
+    margin-left: 6px;
+}
+
+.rank {
+    float: right;
+    width: 214px;
+    height: 138px;
+    border: 1px solid #e6e6e6;
+    background: #fcfcfa;
+    padding-left: 5px;
+}
+
+.label {
+    float: left;
+    background: #fff;
+    border: 1px solid gainsboro;
+    border-left: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 20px;
+    /* margin: 20px 0; */
+    color: skyblue;
+    text-align: center;
+}
+
+.label2 {
+    position: relative;
+    text-align: center;
+    left: 21px;
+    float: right;
+    background: #fff;
+    border: 1px solid gainsboro;
+    border-right: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    width: 20px;
+    /* margin: 20px 0; */
+    color: skyblue;
+}
+
+.bookreading {
+    box-sizing: border-box;
+    float: left;
+    width: 80px;
+    height: 100px;
+    border: 1px solid pink;
+    background: #fff;
+    margin-left: 15px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 25px 30px;
+    align-items: center;
+    display: flex;
+}
+
+.guessbox {
+    overflow: hidden;
+    width: 990px;
+    height: 200px;
+    /* background:  */
+    padding-top: 5px;
+    padding-bottom: 10px;
+    /* padding-left: 35px; */
+}
+
+.guessbox .title {
+    /* padding: 0 400px; */
+    padding-left: 420px;
+    padding-right: 20px;
+    height: 30px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+.guessbox .font {
+    /* display: inline-block; */
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+    width: 64px;
+    height: 30px;
+    line-height: 30px;
+    color: pink;
+    margin: 0 3px;
+    /* border: 1px solid #fff; */
+}
+
+.guessbox .title img {
+    float: left;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.guessbox .pic {
+    float: left;
+    margin-right: 10px;
+    width: 113px;
+    height: 160px;
+    background: pink;
+    transition: .3s;
+}
+
+.guessbox .title .change {
+    float: right;
+    color: #d5d5d6;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.guessbox .pic img {
+    box-sizing: border-box;
+    width: 100%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.guessbox .pic img:hover {
+    border: 2px solid pink;
+    border-radius: 10px;
+}
+
+.focusslider .photo {
+    position: absolute;
+    animation: round 20s infinite;
+    opacity: 0;
+    height: 270px;
+    width: 482.5px;
+    overflow: hidden;
+}
+
+@keyframes round {
+    25% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+.focusslider img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.focusslider img:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.focusslider img:nth-child(3) {
+    animation-delay: 8s;
+}
+
+.focusslider img:nth-child(4) {
+    animation-delay: 12s;
+}
+
+.focusslider img:nth-child(5) {
+    animation-delay: 16s;
+}
